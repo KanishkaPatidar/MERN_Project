@@ -22,7 +22,7 @@ const Admin = () => {
         formData.append('image', projectForm.image);
 
         try {
-            await axios.post('http://localhost:5000/api/projects', formData);
+            await axios.post('https://mern-project-v4vj.onrender.com/api/projects', formData);
             alert('Project Added Successfully!');
             setProjectForm({ name: '', description: '', image: null }); 
         } catch (err) {
@@ -43,7 +43,7 @@ const Admin = () => {
         formData.append('image', clientForm.image);
 
         try {
-            await axios.post('http://localhost:5000/api/clients', formData);
+            await axios.post('https://mern-project-v4vj.onrender.com/api/clients', formData);
             alert('Client Added Successfully!');
             setClientForm({ name: '', designation: '', description: '', image: null });
         } catch (err) {
@@ -54,12 +54,12 @@ const Admin = () => {
 
     useEffect(() => {
         if (activeTab === 'messages') {
-            axios.get('http://localhost:5000/api/contact')
+            axios.get('https://mern-project-v4vj.onrender.com/api/contact')
                 .then(res => setMessages(res.data))
                 .catch(err => console.error(err));
         }
         if (activeTab === 'subscribers') {
-            axios.get('http://localhost:5000/api/subscribe')
+            axios.get('https://mern-project-v4vj.onrender.com/api/subscribe')
                 .then(res => setSubscribers(res.data))
                 .catch(err => console.error(err));
         }

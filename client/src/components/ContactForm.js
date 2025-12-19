@@ -12,7 +12,7 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/api/contact', formData)
+        axios.post('https://mern-project-v4vj.onrender.com/api/contact', formData)
             .then(() => {
                 alert('Request Sent Successfully!');
                 setFormData({ fullName: '', email: '', mobile: '', city: '' });

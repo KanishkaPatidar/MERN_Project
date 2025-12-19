@@ -6,7 +6,7 @@ const Footer = () => {
 
     const handleSubscribe = () => {
         if (!email) return alert('Please enter an email address');
-        axios.post('http://localhost:5000/api/subscribe', { email })
+        axios.post('https://mern-project-v4vj.onrender.com/api/subscribe', { email })
             .then(() => {
                 alert('Subscribed Successfully!');
                 setEmail('');

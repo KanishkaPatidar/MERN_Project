@@ -5,7 +5,7 @@ const Clients = () => {
     const [clients, setClients] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/clients')
+        axios.get('https://mern-project-v4vj.onrender.com/api/clients')
             .then(res => setClients(res.data))
             .catch(err => console.log(err));
     }, []);
@@ -28,7 +28,7 @@ const Clients = () => {
                     {clients.map((client) => (
                         <div key={client._id} className="client-card">
                             <img 
-                                src={`http://localhost:5000/${client.image}`} 
+                                src={`https://mern-project-v4vj.onrender.com/${client.image}`} 
                                 alt={client.name} 
                                 className="client-img"
                             />
