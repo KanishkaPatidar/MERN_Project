@@ -27,7 +27,6 @@ body {
   padding: 0 20px;
 }
 
-/* --- Navbar --- */
 .navbar {
   background-color: var(--primary-blue);
   padding: 15px 0;
@@ -52,7 +51,6 @@ body {
 }
 .nav-links a:hover { opacity: 0.8; }
 
-/* --- Hero Section --- */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://img.freepik.com/free-photo/medium-shot-people-working-together_23-2149345267.jpg?w=1380');
   background-size: cover;
@@ -88,7 +86,6 @@ body {
   justify-content: flex-end; 
 }
 
-/* --- About Section --- */
 .about-section { padding: 80px 20px; }
 .about-split { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; gap: 40px; }
 .about-text { flex: 1; max-width: 500px; }
@@ -107,14 +104,12 @@ body {
 .dot-blue { width: 20px; height: 20px; background: #3b82f6; border-radius: 50%; position: absolute; top: 10%; left: 15%; }
 .dot-orange { width: 15px; height: 15px; background: #f97316; border-radius: 50%; position: absolute; bottom: 40%; left: 10%; }
 
-/* --- Features Grid --- */
 .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
 .feature-item { padding: 20px; }
 .icon-circle { width: 60px; height: 60px; border-radius: 50%; background: #eef2ff; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
 .feature-item h3 { color: var(--primary-blue); margin-bottom: 10px; font-size: 1.2rem; }
 .feature-item p { font-size: 0.9rem; color: #777; }
 
-/* --- General Grid & Cards --- */
 .section-title { text-align: center; margin: 70px 0 40px; color: var(--primary-blue); font-size: 2.2rem; font-weight: 600; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
@@ -123,17 +118,14 @@ body {
 .card-content { padding: 25px; }
 .card-content h3 { color: var(--primary-blue); margin-bottom: 10px; }
 
-/* Buttons */
 .btn-orange { background-color: var(--accent-orange); color: white; border: none; padding: 10px 25px; border-radius: 5px; font-weight: 600; cursor: pointer; text-transform: uppercase; font-size: 0.85rem; margin-top: 15px; display: inline-block; }
 .btn-primary { background-color: var(--primary-blue); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
 
-/* Clients */
 .client-card { text-align: center; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 .client-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; border: 3px solid var(--bg-light); }
 .client-name { color: var(--primary-blue); font-weight: 700; margin-top: 10px; }
 .client-role { color: var(--accent-orange); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
 
-/* --- Contact Form (Transparent) --- */
 .contact-card {
   background-color: rgba(72, 103, 170, 0.9); 
   padding: 40px;
@@ -207,7 +199,6 @@ body {
   }
 }
 
-/* --- Learn More Section --- */
 .learn-more-section {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://img.freepik.com/free-photo/modern-living-room-interior-design_23-2148897232.jpg');
   background-size: cover;
@@ -240,7 +231,6 @@ body {
   transform: scale(1.05);
 }
 
-/* --- Footer (Blue & Thin) --- */
 .footer-blue {
   background-color: #2e89ff; 
   color: white;
@@ -330,7 +320,6 @@ body {
   }
 }
 
-/* --- Empty States & Desc --- */
 .section-desc {
   text-align: center;
   max-width: 700px;
@@ -359,7 +348,6 @@ body {
   color: #999;
 }
 
-/* --- Admin Panel --- */
 .admin-container {
   display: flex;
   min-height: 100vh;
