@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/flipr_task')
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://admin:pass123word@cluster0.vurqkhu.mongodb.net/?appName=Cluster0')
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
